@@ -14,4 +14,10 @@ describe('Triangle') do
     expect(Triangle.new(4,3,3).triangle()).to(eq("It's a isosceles triangle."))
     end
   end
+  describe('#triangle') do
+  it('checks a triangle for no equal sides') do
+    expect(Triangle.new(4,3,2).triangle()).to(eq("It's a scalene triangle."))
+  end
+end
+
 end

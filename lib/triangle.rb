@@ -15,6 +15,8 @@ class Triangle
       @length == @height && @length != @width ||
       @length == @width && @length != @height
       "It's a isosceles triangle."
+    elsif @width != @length && @width != @height && @height != @length
+      "It's a scalene triangle."
     end
   end
 end
