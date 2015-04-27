@@ -8,6 +8,13 @@ class Triangle
   define_method(:triangle) do
     if @width == @height && @width == @length
       "It's a equilateral triangle."
+    elsif @width == @height && @width != @length ||
+      @width == @length && @width != @height ||
+      @height == @width && @height != @length ||
+      @height == @width && @height != @length ||
+      @length == @height && @length != @width ||
+      @length == @width && @length != @height
+      "It's a isosceles triangle."
     end
   end
 end
